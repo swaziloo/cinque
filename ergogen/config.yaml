@@ -1,0 +1,937 @@
+  units:
+    # Spacing Variables
+    kx: 18.7 # width mx 19 choc 18
+    ky: 18.7 # height mx 19 choc 17
+  points:
+    zones:
+      matrix:
+        key:
+          padding: 1ky
+          spread: 1kx
+          tags:
+            - key
+            - matrix_key
+        anchor:
+          rotate: 0 
+          shift: [100, -100]
+        columns:
+          outer:
+            key.column_net: LC0
+            key.mirror.column_net: RC0 
+            rows:
+              number:
+                skip: true
+              top.key:
+                led_prev: LL_25
+                led_next: LL_26
+                mirror.led_prev: RL_25
+                mirror.led_next: RL_26
+              home.key:
+                led_prev: LL_26
+                led_next: LL_27
+                mirror.led_prev: RL_26
+                mirror.led_next: RL_27
+              bottom.key:
+                led_prev: LL_27
+                led_next: LL_28
+                mirror.led_prev: RL_27
+                mirror.led_next: RL_28
+          pinky:
+            key.stagger: -5
+            key.column_net: LC1
+            key.mirror.column_net: RC1    
+            rows:
+              number.key:
+                led_prev: LL_24
+                led_next: LL_25
+                mirror.led_prev: RL_24
+                mirror.led_next: RL_25
+              top.key:
+                led_prev: LL_23
+                led_next: LL_24
+                mirror.led_prev: RL_23
+                mirror.led_next: RL_24
+              home.key:
+                led_prev: LL_22
+                led_next: LL_23
+                mirror.led_prev: RL_22
+                mirror.led_next: RL_23
+              bottom.key:
+                led_prev: LL_21
+                led_next: LL_22
+                mirror.led_prev: RL_21
+                mirror.led_next: RL_22
+          ring:
+            key.spread: .95kx
+            key.origin: [-11.85, -kx]
+            key.stagger: 10
+            key.splay: -5
+            key.column_net: LC2
+            key.mirror.column_net: RC2
+            rows:
+              number.key:
+                led_prev: LL_16
+                led_next: LL_17
+                mirror.led_prev: RL_16
+                mirror.led_next: RL_17
+              top.key:
+                led_prev: LL_17
+                led_next: LL_18
+                mirror.led_prev: RL_17
+                mirror.led_next: RL_18
+              home.key:
+                led_prev: LL_18
+                led_next: LL_19
+                mirror.led_prev: RL_18
+                mirror.led_next: RL_19
+              bottom.key:
+                led_prev: LL_19
+                led_next: LL_20
+                mirror.led_prev: RL_19
+                mirror.led_next: RL_20
+          middle:
+            key.stagger: 7
+            key.column_net: LC3
+            key.mirror.column_net: RC3    
+            rows:
+              number.key:
+                led_prev: LL_15
+                led_next: LL_16
+                mirror.led_prev: RL_15
+                mirror.led_next: RL_16
+              top.key:
+                led_prev: LL_14
+                led_next: LL_15
+                mirror.led_prev: RL_14
+                mirror.led_next: RL_15
+              home.key:
+                led_prev: LL_13
+                led_next: LL_14
+                mirror.led_prev: RL_13
+                mirror.led_next: RL_14
+              bottom.key:
+                led_prev: LL_12
+                led_next: LL_13
+                mirror.led_prev: RL_12
+                mirror.led_next: RL_13
+          index:
+            key.spread: 1.01kx
+            key.stagger: -7
+            key.splay: -5
+            key.column_net: LC4
+            key.mirror.column_net: RC4    
+            rows:
+              number.key:
+                led_prev: LL_6
+                led_next: LL_7
+                mirror.led_prev: RL_6
+                mirror.led_next: RL_7
+              top.key:
+                led_prev: LL_7
+                led_next: LL_8
+                mirror.led_prev: RL_7
+                mirror.led_next: RL_8
+              home.key:
+                led_prev: LL_8
+                led_next: LL_9
+                mirror.led_prev: RL_8
+                mirror.led_next: RL_9
+              bottom.key:
+                led_prev: LL_9
+                led_next: LL_10
+                mirror.led_prev: RL_9
+                mirror.led_next: RL_10
+          inner:
+            key.stagger: -2
+            key.column_net: LC5
+            key.mirror.column_net: RC5 
+            rows:
+              number.key:
+                led_prev: LL_5
+                led_next: LL_6
+                mirror.led_prev: RL_5
+                mirror.led_next: RL_6
+              top.key:
+                led_prev: LL_4
+                led_next: LL_5
+                mirror.led_prev: RL_4
+                mirror.led_next: RL_5
+              home.key:
+                led_prev: LL_3
+                led_next: LL_4
+                mirror.led_prev: RL_3
+                mirror.led_next: RL_4
+              bottom.key:
+                led_prev: LL_2
+                led_next: LL_3
+                mirror.led_prev: RL_2
+                mirror.led_next: RL_3
+        rows:
+          bottom:
+            row_net: LR3
+            mirror.row_net: RR3
+          home:
+            row_net: LR2
+            mirror.row_net: RR2
+          top:
+            row_net: LR1
+            mirror.row_net: RR1
+          number:
+            row_net: LR0
+            mirror.row_net: RR0
+      thumbs:
+        key:
+          padding: 1ky
+          spread: 1kx
+          tags:
+            - key
+            - thumb_key
+        anchor:
+          ref: matrix_ring_bottom
+          shift: [.4kx, -1.06ky]
+        columns:        
+          middle:
+            key.splay: -10
+            key.column_net: LC2
+            key.mirror.column_net: RC2
+            rows:
+              mod.key:
+                led_prev: LL_20
+                led_next: LL_21
+                mirror.led_prev: RL_20
+                mirror.led_next: RL_21
+          index:
+            key.column_net: LC3
+            key.mirror.column_net: RC3
+            rows:
+              mod.key:
+                led_prev: LL_11
+                led_next: LL_12
+                mirror.led_prev: RL_11
+                mirror.led_next: RL_12
+          inner:
+            key.width: 1.25ky
+            key.column_net: LC4
+            key.mirror.column_net: RC4
+            key.rotate: -90
+            rows:
+              mod.key:
+                led_prev: LL_10
+                led_next: LL_11
+                mirror.led_prev: RL_10
+                mirror.led_next: RL_11
+          near:
+            key.width: 1.25ky
+            key.column_net: LC5
+            key.mirror.column_net: RC5
+            key.rotate: -90
+            rows:
+              mod.key:
+                led_prev: LL_1
+                led_next: LL_2
+                mirror.led_prev: RL_1
+                mirror.led_next: RL_2
+          far:
+            key.width: 1.25ky
+            key.column_net: LC0
+            key.mirror.column_net: RC0
+            key.rotate: -90
+            rows:
+              mod.key:
+                led_prev: LLED
+                led_next: LL_1
+                mirror.led_prev: RLED
+                mirror.led_next: RL_1
+        rows:
+          mod:
+            row_net: LR4
+            mirror.row_net: RR4
+      scrollwheel:
+        key.tags: [scrollwheel]
+        anchor:
+          ref: matrix_inner_bottom
+          shift: [19.6, -3]
+        columns:
+          scrollwheel:
+            key:
+              column_net: LC0
+              mirror.column_net: RC0
+        rows:
+          scrollwheel:
+            row_net: LR0
+            mirror.row_net: RR0
+
+      # pcb locations
+      mcu:
+        key.tags: [mcu]
+        anchor:
+          ref: matrix_inner_top
+          shift: [20.1, 5]
+      display:
+        key.tags: [niceview]
+        anchor:
+          ref: matrix_inner_home
+          shift: [20.1, 21.2]
+      h_reset:
+        key.tags: [h_reset]
+        anchor:
+          ref: matrix_index_number
+          shift: [-11.75, 11.8]
+          rotate: -10
+      v_reset:
+        key.tags: [v_reset]
+        anchor:
+          ref: matrix_inner_home
+          shift: [20.1, -9]
+      trrs:
+        key.tags: [trrs]
+        anchor:
+          ref: matrix_inner_home
+          shift: [28, -2.5]
+          rotate: -90
+
+      # mounting hole locations
+      topOuter:
+        key.tags: [hole]
+        anchor:
+          ref: matrix_pinky_number
+          shift: [-0.5kx, -0.5ky]
+      topCenter:
+        key.tags: [hole]
+        anchor:
+          ref: matrix_ring_number
+          shift: [0.5kx, -0.5ky]
+      topInner:
+        key.tags: [hole]
+        anchor:
+          ref: matrix_inner_number
+          shift: [-0.5kx, -0.5ky]
+      bottomOuter:
+        key.tags: [hole]
+        anchor:
+          ref: matrix_pinky_home
+          shift: [-0.5kx, -0.5ky]
+      bottomInner:
+        key.tags: [hole]
+        anchor:
+          ref: matrix_index_bottom
+          shift: [-12.9, -5.5]
+      thumb:
+        key.tags: [hole]
+        anchor:
+          ref: thumbs_near_mod
+          shift: [-0.5kx, 0.5ky]
+      mountInner:
+        key.tags: [mount]
+        anchor:
+          ref: matrix_inner_home
+          shift: [13.7, -9]
+      mountOuter:
+        key.tags: [mount]
+        anchor:
+          ref: matrix_inner_home
+          shift: [26.5, -9]
+
+      # underglow RGB locations
+      modFarRgb:
+        key:
+          tags: [underglow]
+          counter: "1"
+          led_prev: LL_28
+          led_next: LL_29
+          mirror.led_prev: RL_28
+          mirror.led_next: RL_29
+        anchor:
+          ref: thumbs_far_mod
+          shift: [-5, 0.6]
+          rotate: 90
+      modMiddleRgb:
+        key:
+          tags: [underglow]
+          counter: "2"
+          led_prev: LL_29
+          led_next: LL_30
+          mirror.led_prev: RL_29
+          mirror.led_next: RL_30
+        anchor:
+          ref: thumbs_index_mod
+          shift: [-6, 0.6]
+      outerBottomRgb:
+        key:
+          tags: [underglow]
+          counter: "3"
+          led_prev: LL_30
+          led_next: LL_31
+          mirror.led_prev: RL_30
+          mirror.led_next: RL_31
+        anchor:
+          ref: matrix_outer_bottom
+          shift: [6, 0]
+      pinkyNumberRgb:
+        key:
+          tags: [underglow]
+          counter: "4"
+          led_prev: LL_31
+          led_next: LL_32
+          mirror.led_prev: RL_31
+          mirror.led_next: RL_32
+        anchor:
+          ref: matrix_pinky_number
+          shift: [-6, 0.6]
+      middleNumberRgb:
+        key:
+          tags: [underglow]
+          counter: "5"
+          led_prev: LL_32
+          led_next: LL_33
+          mirror.led_prev: RL_32
+          mirror.led_next: RL_33
+        anchor:
+          ref: matrix_middle_number
+          shift: [-6, 0.6]
+      innerNumberRgb:
+        key:
+          tags: [underglow]
+          counter: "6"
+          led_prev: LL_33
+          led_next: LL_34
+          mirror.led_prev: RL_33
+          mirror.led_next: RL_34
+        anchor:
+          ref: matrix_inner_number
+          shift: [-6, 0.6]
+      mountRgb:
+        key:
+          tags: [underglow]
+          counter: "7"
+          led_prev: LL_34
+          led_next: LL_35
+          mirror.led_prev: RL_34
+          mirror.led_next: RL_35
+        anchor:
+          ref: matrix_inner_home
+          shift: [20.1, -9]
+    rotate: 10
+    mirror: &mirror
+      ref: matrix_inner_number
+      distance: 78.5
+  outlines:
+    switch_cutout:
+      - what: rectangle
+        where: [key]
+        size: 14
+    roller_cutout:
+      - what: rectangle
+        where: 
+          ref: matrix_inner_bottom
+          shift: [19.6, -3]
+        size: [17.75, 15]
+        asym: both
+    rotary_cutout:
+      - what: polygon
+        asym: both
+        operation: stack
+        points:
+          - ref: matrix_inner_bottom
+            shift: [12.1, 3.6]
+          - ref: matrix_inner_bottom
+            shift: [25.1, 3.6]
+          - ref: matrix_inner_bottom
+            shift: [25.1, 1.1]
+          - ref: matrix_inner_bottom
+            shift: [26.1, 1.1]
+          - ref: matrix_inner_bottom
+            shift: [26.1, -7.1]
+          - ref: matrix_inner_bottom
+            shift: [25.1, -7.1]
+          - ref: matrix_inner_bottom
+            shift: [25.1, -9.6]
+          - ref: matrix_inner_bottom
+            shift: [12.1, -9.6]
+          - ref: matrix_inner_bottom
+            shift: [12.1, -7.1]
+          - ref: matrix_inner_bottom
+            shift: [10.6, -7.1]
+          - ref: matrix_inner_bottom
+            shift: [10.6, 1.1]
+          - ref: matrix_inner_bottom
+            shift: [12.1, 1.1]
+    switch_plus_roller_cutout:
+      - name: switch_cutout
+      - operation: add
+        name: roller_cutout
+    switch_plus_rotary_cutout:
+      - name: switch_cutout
+      - operation: add
+        name: rotary_cutout
+    board_left:
+      - what: polygon
+        operation: stack
+        points:
+          - ref: matrix_outer_top
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_pinky_number
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_ring_number
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_middle_number
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_middle_number
+            shift: [0.5kx, 0.5ky] 
+          - ref: matrix_inner_number
+            shift: [0.5kx, 0.5ky]
+          - ref: matrix_inner_number
+            shift: [15.5, 5]
+          - ref: matrix_inner_number
+            shift: [30, 5]
+          - ref: matrix_inner_bottom
+            shift: [30, -10]
+          - ref: thumbs_far_mod
+            shift: [-0.625kx, 0.5ky]
+          - ref: thumbs_far_mod
+            shift: [0.625kx, 0.5ky]
+          - ref: thumbs_far_mod
+            shift: [0.625kx, -0.5ky]
+          - ref: thumbs_inner_mod
+            shift: [0.625kx, -0.5ky]
+          - ref: matrix_outer_bottom
+            shift: [-0.5kx, -0.5ky]
+        fillet: 1
+    board_right:
+      - what: polygon
+        operation: stack
+        points:
+          - ref: mirror_matrix_outer_top
+            shift: [-0.5kx, 0.5ky]
+          - ref: mirror_matrix_pinky_number
+            shift: [-.5kx, 0.5ky]
+          - ref: mirror_matrix_ring_number
+            shift: [-.5kx, 0.5ky]
+          - ref: mirror_matrix_middle_number
+            shift: [-.5kx, 0.5ky]
+          - ref: mirror_matrix_middle_number
+            shift: [.5kx, 0.5ky] 
+          - ref: mirror_matrix_inner_number
+            shift: [0.5kx, 0.5ky]
+          - ref: mirror_matrix_inner_number
+            shift: [15.5, 5]
+          - ref: mirror_matrix_inner_number
+            shift: [30, 5]
+          - ref: mirror_matrix_inner_bottom
+            shift: [30, -10]
+          - ref: mirror_thumbs_far_mod
+            shift: [-0.625kx, 0.5ky]
+          - ref: mirror_thumbs_far_mod
+            shift: [0.625kx, 0.5ky]
+          - ref: mirror_thumbs_far_mod
+            shift: [0.625kx, -0.5ky]
+          - ref: mirror_thumbs_inner_mod
+            shift: [0.625kx, -0.5ky]
+          - ref: mirror_matrix_outer_bottom
+            shift: [-0.5kx, -0.5ky]  
+        fillet: 1
+    switchplate_outline:
+      - what: polygon
+        operation: stack
+        points:
+          - ref: matrix_outer_top
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_pinky_number
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_ring_number
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_middle_number
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_middle_number
+            shift: [0.5kx, 0.5ky]
+          - ref: matrix_inner_number
+            shift: [0.5kx, 0.5ky]
+          - ref: matrix_inner_bottom
+            shift: [0.5kx, 6.6]
+          - ref: matrix_inner_bottom
+            shift: [30, 6.6]
+          - ref: matrix_inner_bottom
+            shift: [30, -10]
+          - ref: thumbs_far_mod
+            shift: [-0.625kx, 0.5ky]
+          - ref: thumbs_far_mod
+            shift: [0.625kx, 0.5ky]
+          - ref: thumbs_far_mod
+            shift: [0.625kx, -0.5ky]
+          - ref: thumbs_inner_mod
+            shift: [0.625kx, -0.5ky]
+          - ref: matrix_outer_bottom
+            shift: [-0.5kx, -0.5ky]
+        fillet: 1
+    keys:
+      - what: rectangle
+        where: [key]
+        size: [kx, ky]
+    board:
+      - name: board_left
+      - operation: add
+        name:  board_right
+    mounts:
+      - what: circle
+        where: [hole,mount]
+        radius: 1.1 
+    board_with_holes:
+      - name: board
+      - operation: subtract
+        name: mounts
+    combo_scrollwheel:
+      - name: board
+      - operation: subtract
+        name: switch_plus_roller_cutout
+    combo_rotary:
+      - name: board
+      - operation: subtract
+        name: switch_plus_rotary_cutout
+    switchplate_scrollwheel:
+      - name: switchplate_outline
+      - operation: subtract
+        name: switch_cutout
+      - operation: subtract
+        name: roller_cutout
+    switchplate_scrollwheel_with_mounts:
+      - name: switchplate_scrollwheel
+      - operation: subtract
+        name: mounts
+    switchplate_rotary:
+      - name: switchplate_outline
+      - operation: subtract
+        name: switch_cutout
+      - operation: subtract
+        name: rotary_cutout
+    switchplate_rotary_with_mounts:
+      - name: switchplate_rotary
+      - operation: subtract
+        name: mounts
+  pcbs:
+    cinque_switchplate_scrollwheel_1-0:
+      outlines:
+        main:
+          outline: switchplate_scrollwheel
+      footprints:
+        standoff_hole:
+          what: ceoloide/mounting_hole_plated
+          where: [hole]
+          params:
+            outline: 0.5
+            drill: 2.2
+    cinque_switchplate_rotary_1-0:
+      outlines:
+        main:
+          outline: switchplate_rotary
+      footprints:
+        standoff_hole:
+          what: ceoloide/mounting_hole_plated
+          where: [hole]
+          params:
+            outline: 0.5
+            drill: 2.2 
+    cinque_1-0:
+      outlines:
+        main:
+          outline: board
+        roller_cut:
+          outline: roller_cutout
+          layer: Cmts.User
+        rotary_cut: 
+          outline: rotary_cutout
+          layer: Cmts.User
+        # switchplate_scrollwheel:
+        #   outline: switchplate_scrollwheel
+        #   layer: Eco1.User
+        # switchplate_rotary:
+        #   outline: switchplate_rotary
+        #   layer: Eco2.User
+      footprints:
+        gateron-ks33:
+          what: gateron-ks33
+          where: [key]
+          params:
+            reversible: false
+            hotswap: true
+            solder: false
+            include_keycap: true
+            include_corner_marks: true
+            include_stem_outline: false
+            include_custom_solder_pads: false
+            allow_soldermask_bridges: false
+            include_centerhole_net: false
+            outer_pad_width_back: 2.3
+            inner_pad_width: 2.3
+            from: "{{column_net}}"
+            to: "{{colrow}}"
+        diode:
+          what: ceoloide/diode_tht_sod123
+          where: [key]
+          params:
+            reversible: false
+            from: "{{colrow}}"
+            to: "{{row_net}}"
+          adjust:
+            rotate: -90
+            shift: [8.45, -4.1]
+            resist: true
+        scrollwheel:
+          what: EVQWGD001
+          where: [scrollwheel]
+          params:
+            from: "{{column_net}}"
+            to: "{{colrow}}"
+            A: LENCA
+            B: LGND
+            C: LENCB
+            D: Lundef         
+            mirror.A: RENCA
+            mirror.B: RGND
+            mirror.C: RENCB
+            mirror.D: Rundef      
+        scroll_diode:
+          what: ceoloide/diode_tht_sod123
+          where: [scrollwheel]
+          params:
+            reversible: false
+            from: "{{colrow}}"
+            to: "{{row_net}}"
+          adjust:
+            shift: [-7, 9.1]
+        rotary:
+          what: ceoloide/rotary_encoder_ec11_ec12
+          where: [scrollwheel]
+          params:
+            include_plate_hole_marking: true
+            include_silkscreen: false
+            S1: "{{column_net}}"
+            S2: "{{colrow}}"
+            A: LENCA
+            B: LGND
+            C: LENCB
+            mirror.A: RENCA
+            mirror.B: RGND
+            mirror.C: RENCB
+          adjust: 
+            shift: [-1, 0]
+            rotate: -90
+        mcu:
+          what: promicro-plus
+          where: [mcu]
+          params:
+            RAW: LRAW
+            GND: LGND
+            RST: LRST
+            VCC: LVCC
+            P21: ENCA
+            P20: ENCB
+            P19: LR0
+            P18: LR1
+            P15: LR2
+            P14: LR3
+            P16: LR4
+            P10: LR5
+            P101: LCS
+            GP12: LMISO
+            GP13: LCS
+            GP14: LSCK
+            GP15: LMOSI
+            P1: LLED
+            P0: LDATA
+            P2: LSDA
+            P3: LSCL
+            P4: LC0
+            P5: LC1
+            P6: LC2
+            P7: LC3
+            P8: LC4
+            P9: LC5
+            mirror.RAW: RRAW
+            mirror.GND: RGND
+            mirror.RST: RRST
+            mirror.VCC: RVCC
+            mirror.P21: RENCA
+            mirror.P20: RENCB
+            mirror.P19: RR0
+            mirror.P18: RR1
+            mirror.P15: RR2
+            mirror.P14: RR3
+            mirror.P16: RR4
+            mirror.P10: RR5
+            mirror.P101: RCS
+            mirror.GP12: RMISO
+            mirror.GP13: RCS
+            mirror.GP14: RSCK
+            mirror.GP15: RMOSI
+            mirror.P1: RLED
+            mirror.P0: RDATA
+            mirror.P2: RSDA
+            mirror.P3: RSCL
+            mirror.P4: RC0
+            mirror.P5: RC1
+            mirror.P6: RC2
+            mirror.P7: RC3
+            mirror.P8: RC4
+            mirror.P9: RC5
+          adjust: 
+            rotate: -90
+            resist: true
+        on-offswitch:
+          what: corax/slider_reversible
+          where: mcu
+          adjust:
+            shift: [0, 16.95]
+          params:
+            side: B
+            reverse: false
+            from: Lswitch_from
+            to: LRAW
+            mirror.from: Rswitch_from
+            mirror.to: RRAW
+        battery:
+          what: corax/battery
+          where: [mcu]
+          params:
+            GND: LGND
+            RAW: Lswitch_from
+            mirror.GND: RGND
+            mirror.RAW: Rswitch_from
+          adjust:
+            rotate: 270
+            shift: [0, 17]
+            resist: true
+        niceview:
+          what: display_multi
+          where: [niceview]
+          params:
+            reversible: false
+            GND: LGND
+            VCC: LVCC
+            MOSI: LSDA
+            SCK: LSCL
+            CS: CS
+            mirror.GND: RGND
+            mirror.VCC: RVCC
+            mirror.MOSI: RSDA
+            mirror.SCK: RSCL
+            mirror.CS: CS
+        trrs:
+          what: ceoloide/trrs_pj320a
+          where: [trrs]
+          params:
+            TP: LSDA
+            R1: LVCC
+            R2: LGND
+            SL: LDATA
+            mirror.TP: RSDA
+            mirror.R1: RVCC
+            mirror.R2: RGND
+            mirror.SL: RDATA
+        per-key-led:
+          what: ceoloide/led_sk6812mini-e
+          where: [key]
+          adjust: 
+            shift: [-0.7, 4.85]
+            resist: true
+          params:
+            reversible: false
+            reverse_mount: true
+            include_traces_vias: true
+            P1: LVCC
+            P2: "{{key.led_next}}" #DOUT
+            P3: LGND
+            P4: "{{key.led_prev}}" #DIN
+            mirror.P1: RVCC
+            mirror.P2: "{{key.mirror.led_next}}" #DOUT
+            mirror.P3: RGND
+            mirror.P4: "{{key.mirror.led_prev}}" #DIN
+        underglow-led:
+          what: rgb-35
+          where: [underglow]
+          adjust:
+            resist: true
+          params: 
+            side: B
+            counter: "{{counter}}"
+            DIN: "{{led_prev}}"
+            DOUT: "{{led_next}}"
+            VCC: LVCC
+            GND: LGND
+            mirror.DIN: "{{mirror.led_prev}}"
+            mirror.DOUT: "{{mirror.led_next}}"
+            mirror.VCC: RVCC
+            mirror.GND: RGND
+        horizontal_reset:
+          what: ceoloide/reset_switch_smd_side
+          where: [h_reset]
+          params:
+            side: B
+            include_bosses: true
+            include_courtyard: true
+            reversible: false
+            from: LGND
+            to: LRST
+            mirror.from: RGND
+            mirror.to: RRST
+        vertical_reset:
+          what: button
+          where: [v_reset]
+          params:
+            from: LGND
+            to: LRST
+            mirror.from: RGND
+            mirror.to: RRST
+        standoff_hole:
+          what: ceoloide/mounting_hole_plated
+          where: [hole]
+          params:
+            outline: 0.3
+            drill: 4.1
+        mounting_hole:
+          what: ceoloide/mounting_hole_plated
+          where: [mount]
+          params:
+            outline: 0.9
+            drill: 2.2
+
+        # silkscreen
+        jlcpcb_order_number_text:
+          what: ceoloide/utility_text
+          where: thumbs_far_mod
+          params:
+            side: B
+            mirrored: true
+            text: "JLCJLCJLCJLC"
+          adjust:
+            shift: [-11, 0]
+            rotate: 90
+        ergogen_logo:
+          what: ceoloide/utility_ergogen_logo
+          where: thumbs_inner_mod
+          params:
+            side: B
+            scale: 1.0
+            reversible: false
+          adjust:
+            shift: [-12, 7]
+            rotate: 90
+        ergogen_text_left:
+          what: ceoloide/utility_text
+          where: thumbs_near_mod
+          params:
+            side: B
+            mirrored: true
+            text: "ERGOGEN"
+          adjust:
+            shift: [-11, -5]
+            rotate: 90 
+        version_text:
+          what: ceoloide/utility_text
+          where: /thumbs_inner_mod/
+          params:
+            side: B
+            mirrored: true
+            text: "CINQUE v1.0  SWAZILOO.COM/CINQUE"
+          adjust:
+            shift: [-11, -14.5]
+            rotate: 90      
