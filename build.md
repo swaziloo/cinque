@@ -1,17 +1,17 @@
 ![cinque keyboard build parts](images/cinque0018.jpg)
 # Building cinque
 > **Tip:** This guide assumes familiarity with custom keyboard builds.
-> For information on building this type of keyboard, the detailed build guide for the
+> For information on building this family of keyboard, the detailed build guide for the
 > [Sofle Choc](https://brianlow.notion.site/Sofle-Choc-Build-Guide-c4bbbaece6e746f7a5956842af567e79)
 > and the build guides for 
 > the [Lily58 Pro](https://github.com/kata0510/Lily58/blob/master/Pro/Doc/buildguide_en.md)
 > the [Sofle RGB](https://josefadamcik.github.io/SofleKeyboard/build_guide_rgb.html)
 > and [Corax](https://github.com/dnlbauer/corax-keyboard/blob/main/docs/BuildGuide.md)
-> can provide the basic instructions.
+> will provide some fundamental instructions.
 
 The first step is to determine configuration and options and ensure that the ProMicro and power scheme will support them. 
-I've built two configurations so far: RP2040 ProMicro (wired) with full RGB/Trackball/OLED (similar to Sofle Choc) 
-and NRF52840 ProMicro with Nice!View and battery power (similar to Corax).
+I've built two configurations so far: RP2040 ProMicro (wired) with full RGB/Trackball/OLED (similar to Sofle Choc) using QMK firmware
+and NRF52840 ProMicro with Nice!View and battery power (similar to Corax) using ZMK firmware.
 
 ![cinque PCB top](images/cinque0044.jpg)
 ## Keyboard Parts
@@ -50,71 +50,30 @@ and NRF52840 ProMicro with Nice!View and battery power (similar to Corax).
 | Trackball             | 1        | 44mm =                                                                                                   |
 
 ## Guidelines
-*Be very careful separating the panel!* 
-There are traces close to the edge. 
-It is wise to score the mouse bites before breaking apart, particularly along the inside edge.
-![scoring breakaway tabs](images/cinque0048.jpg)
-
-Mouse bites scored with a box knife blade.
-![scored tabs near traces](images/cinque0049.jpg)
-
-Separated board will have jagged edges.
-Recommend cautious grinding with a sanding wheel on a dremel.
-![separated board near traces](images/cinque0051.jpg)
-
-Board edge smoothed and ready for assembly.
-![sanded board near traces](images/cinque0052.jpg)
-
-The board features soldered jumpers.
-For either top jumper, connect the center pad with one option.
-- **PK&mdash;UL** determines whether the RGB signal sent to the trackball runs off the end of the per-key (28) set or after the underglow (35). 
+Soldered jumpers:
+- **PK&mdash;UL** determines whether the RGB signal sent to the trackball runs off the end of the per-key (28) set or after the underglow (35).
   - Only solder the jumper on the side that will drive the trackball RGB.
   - Not needed if not using the trackball with RGB.
-- **P1.01&mdash;LED** determines the CS pin if using the Nice!View display. 
+- **P1.01&mdash;LED** determines the CS pin if using the Nice!View display.
   - Note that if hacking a Nice!View with another MCU and RGB (LED) in use, any pin that can handle CS can be soldered to the P1.01 socket under the ProMicro.
-- **SER&mdash;I2C** determines the TRRS mode.
-  - If using I2C solder 2x 1206 SMD 4.7kΩ pull-up resistors on the front of the boards. 
+- **SER&mdash;I2C** determines the TRRS communication mode (I2C is untested).
+  - If using I2C you'll also need to solder 2x 1206 SMD 4.7kΩ pull-up resistors on the front of the boards.
 
-Also note that I re-measured the slot for the Panasonic encoder. 
-It's a snug, if accurate fit. You do not need to clip off the "feet"&mdash;in fact they help hold it in place, but you may need to round off the back corner to help slide it into place.
-
-![board jumpers](images/cinque0054.jpg)
-
-The density of this board can make hand soldering tricky in places.
-I recommend beginning with the 3535 underglow RGB since it can be difficult to hand solder those short pads.
-![high density components](images/cinque0055.jpg)
-
-For example, this underglow LED has a bad solder point and needed to be reflowed.
-It was not the only one.
-Note that the LEDs worked fine&mdash;the soldering was challenging.
-![failed solder on RGB](images/cinque0011.jpg)
-
-![high density components](images/cinque0014.jpg)
-
-When using heat-melt inserts and standoffs, take care to ensure that the total height above the case is 5.9mm for all 6 through-hole mounts and 3.0mm for both direct/cover mounts.
-If using a "sandwich" style case, use 6.0mm standoffs between bottom and top plates, and 3.0mm standoffs from the bottom to middle plate.
-![high density components](images/cinque0059.jpg)
- 
-The trackball bearings are fixed SiO2 spheres that you melt into the printed housing.
-Use a thick insert tool or similar object heated to 200c (400f) to gently press them into place while checking the clearance from the ball to the bottom mounting surface. 
-It should be as close as possible to 2.0mm.
-Begin with the bottom three 2.5mm and get them perfect, then add the top 3.0mm and sink them until the ball just barely tips into them when pushed from the side.
-![trackball bearings](images/cinque0058.jpg)
-
-When assembling the trackball breakout boards, take care to keep components from overhanging the edges.
-Test components before screwing or gluing them into the housing and be sure you're using "reversed" cables (pins are the same on both ends, not flipped).
-![trackball wiring](images/cinque0030.jpg)
-
-Start with the switch plates. Use a dab of hot glue on two sides to secure them.
-The middle, front RGB can face up or down.
-![trackball fitting](images/cinque0057.jpg)
-
-The wiring from the PMW3389 breakout to the connector board should be apparent.
-The "RST" and "MT" connections are unused.
-The FPC ribbon will be a little long.
-Recommend a thin, short TRRS cable that will wrap around the other components.
-![trackball connected](images/cinque0031.jpg)
+|                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![scoring breakaway tabs](images/cinque0048.jpg)      | *Be very careful separating the panel!* There are traces close to the edge. It is wise to score the mouse bites before breaking apart, particularly along the inside edge.                                                                                                                                                                                                                                                                                                     |
+| ![scored tabs near traces](images/cinque0049.jpg)     | Mouse bites scored with a box knife blade.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ![separated board near traces](images/cinque0051.jpg) | Separated board will have jagged edges. Recommend cautious grinding with a sanding wheel on a dremel.                                                                                                                                                                                                                                                                                                                                                                          |
+| ![sanded board near traces](images/cinque0052.jpg)    | Board edge smoothed and ready for assembly.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ![board jumpers](images/cinque0054.jpg)               | The board features soldered jumpers. For either top jumper, connect the center pad with one option.<br/><br/>Also note that I re-measured the slot for the Panasonic encoder. It's a snug, if accurate fit. You do not need to clip off the "feet"&mdash;in fact they help hold it in place, but you may need to round off the back corner to help slide it into place.                                                                                                        |
+| ![high density components](images/cinque0055.jpg)     | The density of this board can make hand soldering tricky in places. I recommend beginning with the 3535 underglow RGB since it can be difficult to hand solder those short pads.                                                                                                                                                                                                                                                                                               |
+| ![failed solder on RGB](images/cinque0011.jpg)        | For example, this underglow LED has a bad solder point and needed to be reflowed. It was not the only one. Note that the LEDs worked fine&mdash;the soldering was challenging.                                                                                                                                                                                                                                                                                                 |
+| ![high density components](images/cinque0014.jpg)     | The underglow LEDs have been the biggest issue. In a future update I will extend the pads to make soldering them easier.                                                                                                                                                                                                                                                                                                                                                       |
+| ![high density components](images/cinque0059.jpg)     | When using heat-melt inserts and standoffs, take care to ensure that the total height above the case is 5.9mm for all 6 through-hole mounts and 3.0mm for both direct/cover mounts. If using a "sandwich" style case, use 6.0mm standoffs between bottom and top plates, and 3.0mm standoffs from the bottom to middle plate.                                                                                                                                                  |
+| ![trackball bearings](images/cinque0058.jpg)          | The trackball bearings are fixed SiO2 spheres that you melt into the printed housing. Use a thick insert tool or similar object heated to 200c (400f) to gently press them into place while checking the clearance from the ball to the bottom mounting surface. It should be as close as possible to 2.0mm. Begin with the bottom three 2.5mm and get them perfect, then add the top 3.0mm and sink them until the ball just barely tips into them when pushed from the side. |
+| ![trackball wiring](images/cinque0030.jpg)            | When assembling the trackball breakout boards, take care to keep components from overhanging the edges. Test components before screwing or gluing them into the housing and be sure you're using "reversed" cables (pins are the same on both ends, not flipped).                                                                                                                                                                                                              |
+| ![trackball fitting](images/cinque0057.jpg)           | Start with the switch plates. Use a dab of hot glue on two sides to secure them. The middle, front RGB can face up or down.                                                                                                                                                                                                                                                                                                                                                    |
+| ![trackball connected](images/cinque0031.jpg)         | The wiring from the PMW3389 breakout to the connector board should be apparent. The "RST" and "MT" connections are unused. The FPC ribbon will be a little long. Recommend a thin, short TRRS cable that will wrap around the other components.                                                                                                                                                                                                                                |
 
 If you've read this far, note that I'll happily respond to any questions you have about building any of this.
-No matter your prior experience or skill level.
 
