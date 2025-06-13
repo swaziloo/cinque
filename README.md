@@ -46,6 +46,9 @@ and trackball integration. No significant issues have been discovered.
 
 ### Future Tweaks
 - Move/change TRRS
+- Large battery single side charge via Schottky diode and shared power switch 
 - Trackball with mouse (small) switches
 - Kailh Choc (or other switch?) version
 - Consider central (on board?) controller(s) with connected peripherals
+
+cinque is licensed under an [MIT license](LICENSE).
