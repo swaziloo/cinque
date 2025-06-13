@@ -13,7 +13,7 @@ Let me know if something (footprint library?) doesn't come through, as I haven't
 ![cinque KiCad pcb](../images/cinque0062.jpg)
 A single switch plate panel provides one EC11 and one EVQWGD001 cutout. These are reversible and can go on either side.
 
-I have extra switch plates available with HASL finish.
+> **Note:** I have extra switch plates available with HASL finish.
 
 ## cinque Base Plate
 

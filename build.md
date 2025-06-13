@@ -13,6 +13,8 @@ The first step is to determine configuration and options and ensure that the Pro
 I've built two configurations so far: RP2040 ProMicro (wired) with full RGB/Trackball/OLED (similar to Sofle Choc) using QMK firmware
 and NRF52840 ProMicro with Nice!View and battery power (similar to Corax) using ZMK firmware.
 
+> **Note:** I have extra v1.0 switch plates with HASL finish. Contact me if interested.
+
 ![cinque PCB top](images/cinque0044.jpg)
 ## Keyboard Parts
 | Item            | Quantity | Detail                                                                                                                                                                                                                                                                                                |
@@ -75,5 +77,6 @@ Soldered jumpers:
 | ![trackball fitting](images/cinque0057.jpg)           | Start with the switch plates. Use a dab of hot glue on two sides to secure them. The middle, front RGB can face up or down.                                                                                                                                                                                                                                                                                                                                                    |
 | ![trackball connected](images/cinque0031.jpg)         | The wiring from the PMW3389 breakout to the connector board should be apparent. The "RST" and "MT" connections are unused. The FPC ribbon will be a little long. Recommend a thin, short TRRS cable that will wrap around the other components.                                                                                                                                                                                                                                |
 
-If you've read this far, note that I'll happily respond to any questions you have about building any of this.
+If anything is unclear, please ask me to add clarification. 
+I'll happily respond to any questions you have about building any of this.
 
