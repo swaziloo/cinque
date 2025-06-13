@@ -1,4 +1,4 @@
-![cinque keyboard RGB Test](images/cinque0015.jpg)
+![cinique keyboard with trackball](images/cinque0042.jpg)
 # cinque 
 ### (\[ˈt͡ʃin.kwe\] or \[sĭngk\], your choice)
 cinque is an open-source 56-key compact staggered low-profile split ortholinear 
@@ -31,7 +31,7 @@ other MCUs and configurations are viable.
 
 ### [Build Guide](build.md)
 
-![cinique keyboard with trackball](images/cinque0042.jpg)
+![cinque keyboard RGB Test](images/cinque0015.jpg)
 
 ### [The Story](story.md)
 
