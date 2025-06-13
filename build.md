@@ -75,6 +75,9 @@ For either top jumper, connect the center pad with one option.
 - **SER&mdash;I2C** determines the TRRS mode.
   - If using I2C solder 2x 1206 SMD 4.7kΩ pull-up resistors on the front of the boards. 
 
+Also note that I re-measured the slot for the Panasonic encoder. 
+It's a snug, if accurate fit. You do not need to clip off the "feet"&mdash;in fact they help hold it in place, but you may need to round off the back corner to help slide it into place.
+
 ![board jumpers](images/cinque0054.jpg)
 
 The density of this board can make hand soldering tricky in places.
