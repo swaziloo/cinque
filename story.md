@@ -28,10 +28,10 @@ and string it together with JST connectors to support experimenting with the fun
 
 Once I got the PCBs in hand and the first keyboard up and running the job switched to case design.
 
-| ![cinque PCBs received](images/cinque0004.jpg)                         | ![first cinque build](images/cinque0010.jpg)                        |
-|------------------------------------------------------------------------|---------------------------------------------------------------------|
-| ![cinque flat case plus riser](images/cinque0040.jpg)                  | ![first wrist rest and billiard placeholder](images/cinque0019.jpg) |
-| ![cinque 1.0 case with 44mm trackball housings](images/cinque0026.jpg) | ![first integrated trackball](images/cinque0023.jpg)                |
+| ![cinque PCBs received](images/cinque0004.jpg)        | ![first cinque alive](images/cinque0008.jpg)                        |
+|-------------------------------------------------------|---------------------------------------------------------------------|
+| ![cinque flat case plus riser](images/cinque0040.jpg) | ![first wrist rest and billiard placeholder](images/cinque0019.jpg) |
+| ![first integrated trackball](images/cinque0023.jpg)  | ![cinque 1.0 case with 44mm trackball housings](images/cinque0026.jpg)              |
 
 Ultimately I ditched the billiard ball,
 as it tracked poorly and pushed the keyboard halves apart.
