@@ -38,19 +38,20 @@ and NRF52840 ProMicro with Nice!View and battery power (similar to Corax) using 
 | Hardware        | *        | m2 inserts, screws, and standoffs vary depending on case and configuration. Use adhesive rubber feet to prevent sliding.                                                                                                                                                                              |
 
 ## Trackball Parts
-| Item                  | Quantity | Detail                                                                                                |
-|-----------------------|----------|-------------------------------------------------------------------------------------------------------|
-| PCB                   | 8        | 1.6mm breakout boards from keyboard                                                                   |
-| PMW3389 Module        | 1        | [Joe's Sensors and Sundry](https://www.tindie.com/products/citizenjoe/pmw3389-motion-sensor/)                                                                                                      |
-| Switches              | 3        | Gateron KS-33 low-profile mechanical switches                                                         |
-| Diodes                | 3        | 1N4148 SOD-123 (or equivalent) SMD diodes                                                             | |
+| Item                  | Quantity | Detail                                                                                                   |
+|-----------------------|----------|----------------------------------------------------------------------------------------------------------|
+| PCB                   | 8        | 1.6mm breakout boards from keyboard                                                                      |
+| PMW3389 Module        | 1        | [Joe's Sensors and Sundry](https://www.tindie.com/products/citizenjoe/pmw3389-motion-sensor/)            |
+| Switches              | 3        | Gateron KS-33 low-profile mechanical switches                                                            |
+| Diodes                | 3        | 1N4148 SOD-123 (or equivalent) SMD diodes                                                                | |
 | Per-key RGB           | 3        | (optional) [SK-6812-E](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4960/14302512) |
-| Underglow RGB         | 4        | (optional) [3535 SMD RGB](https://www.digikey.com/en/products/detail/inolux/IN-PI33TBTPRPGPB/9681238) |
-| JST SH 1.0 SMD Socket | 14       | 8x 3-pin horizontal, 3x 6-pin horizontal, 3x 6-pin vertical                                           |
-| JST SH 1.0 Cable      | 7        | 4x 3-pin 10cm reverse, 3x 6-pin 10cm reverse                                                          |
-| FPC 1.0               | 3        | 2x 12-pin SMD, 1x 10cm ribbon (same side)                                                             |
-| SiO2 Bearings         | 6        | 3x 2.5mm and 3x 3.0mm                                                                                 |
-| Trackball             | 1        | 44mm =                                                                                                |
+| Underglow RGB         | 4        | (optional) [3535 SMD RGB](https://www.digikey.com/en/products/detail/inolux/IN-PI33TBTPRPGPB/9681238)    |
+| JST SH 1.0 SMD Socket | 14       | 8x 3-pin horizontal, 3x 6-pin horizontal, 3x 6-pin vertical                                              |
+| JST SH 1.0 Cable      | 7        | 4x 3-pin 10cm reverse, 3x 6-pin 10cm reverse                                                             |
+| FPC 1.0               | 3        | 2x 12-pin SMD, 1x 10cm ribbon (same side)                                                                |
+| SiO2 Bearings         | 6        | 3x 2.5mm and 3x 3.0mm                                                                                    |
+| Trackball             | 1        | 44mm                                                                                                     |
+| Hardware              | 6        | 1.7mm diameter, 4-6mm long screws, hot glue, small zip ties                                              |
 
 ## Guidelines
 Soldered jumpers:
