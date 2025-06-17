@@ -7,7 +7,7 @@ A single PCB panel will make a keyboard and trackball.
 
 Gerber files were exported according to instructions from [JLCPCB](https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-8).
 
-Let me know if something (footprint library?) doesn't come through, as I haven't previouslyexported KiCad files.
+Let me know if something (footprint library?) doesn't come through, as I haven't previously exported KiCad files.
 
 ## cinque Switch Plate
 ![cinque KiCad pcb](../images/cinque0062.jpg)
