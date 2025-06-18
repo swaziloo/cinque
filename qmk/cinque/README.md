@@ -1,6 +1,6 @@
 ![cinque](../../images/cinque0034.jpg)
 # cinque
-*cinque is an open-source 56-key compact staggered low-profile split columnar mechanical RGB keyboard with rotary encoders and trackball*
+*cinque is an open-source 56-key compact columnar staggered low-profile split mechanical keyboard and trackball with RGB matrix lighting and rotary encoders*
 
 * Keyboard Maintainer: [swaziloo](https://github.com/swaziloo)
 * Hardware Supported: cinque v1 (wired) with RP2040 ProMicro MCU via chibios
