@@ -1,7 +1,7 @@
 ![cinique keyboard with trackball](images/cinque0042.jpg)
 # cinque 
 ### (\[ˈt͡ʃin.kwe\] or \[sĭngk\], your choice)
-cinque is an open-source 56-key compact staggered low-profile split ortholinear 
+cinque is an open-source 56-key compact staggered low-profile split columnar 
 mechanical RGB keyboard and trackball project 
 designed in [Ergogen](https://ergogen.xyz/)
 laid out in [KiCad](https://www.kicad.org/)

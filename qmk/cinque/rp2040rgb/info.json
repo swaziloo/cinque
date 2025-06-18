@@ -3,7 +3,7 @@
     "keyboard_name": "cinque",
     "maintainer": "swaziloo",
     "url": "https://github.com/swaziloo/cinque",
-    "tags": ["ortho", "split", "oled","rgb"],
+    "tags": ["columnar", "split", "oled","rgb"],
     "board": "GENERIC_PROMICRO_RP2040",
     "processor": "RP2040",
     "bootloader": "rp2040",

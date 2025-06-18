@@ -1,7 +1,7 @@
 | ![cinque hand study](images/cinque0037.jpg) | ![cinque hand study](images/cinque0038.jpg) | ![cinque hand study](images/cinque0025.jpg) |
 |---------------------------------------------|---------------------------------------------|---------------------------------------------|
 # The Story
-I've used ortholinear and mechanical keyboards for years.
+I've used columnar and mechanical keyboards for years.
 Upon discovering [Ergogen](https://ergogen.xyz/) 
 and the [Flat Foot Fox](https://flatfootfox.com/) tutorials 
 I felt compelled to measure the angles, motion, range, and tilt of my hands.
