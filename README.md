@@ -29,6 +29,10 @@ Other MCUs and configurations are viable.
 - **RGB:** SK6812 per-key and 3535 underglow lights (including trackball)
 - **Display:** 0.91" I2C OLED or Nice!View (low-power) LCD (via custom footprint)
 
+### Firmware
+- [QMK](qmk/cinque/README.md) (for RP2040)
+- [ZMK](https://github.com/swaziloo/cinque-zmk-config) (for NRF52840)
+
 ### [Build Guide](build.md)
 
 ![cinque keyboard RGB Test](images/cinque0015.jpg)
