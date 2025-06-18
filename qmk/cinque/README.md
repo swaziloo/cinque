@@ -6,6 +6,7 @@
 * Hardware Supported: cinque v1 (wired) with RP2040 ProMicro MCU via chibios
   * Note that the cinque likely works with other ProMicro controllers
 * Hardware Availability: [github/swaziloo/cinque](https://github.com/swaziloo/cinque)
+* Use [ZMK](https://github.com/swaziloo/cinque-zmk-config) firmware for Bluetooth (NRF52840) builds
 
 *Note that it is recommend to flash your RP2040 ProMicro before soldering it to the board, as the default bootloader may not support double-tap flashing.*
 
