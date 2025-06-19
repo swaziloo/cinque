@@ -30,8 +30,10 @@ Other MCUs and configurations are viable.
 - **Display:** 0.91" I2C OLED or Nice!View (low-power) LCD (via custom footprint)
 
 ### Firmware
-- [QMK](qmk/cinque/README.md) (for RP2040)
-- [ZMK](https://github.com/swaziloo/cinque-zmk-config) (for NRF52840)
+- [QMK](qmk/cinque/README.md) (for RP2040) including [my keymap](https://github.com/swaziloo/cinque/blob/main/qmk/cinque/CinqueKeymapQMK-01.pdf)
+- [ZMK](https://github.com/swaziloo/cinque-zmk-config) (for NRF52840) including [my (very similar) keymap](https://github.com/swaziloo/cinque-zmk-config/blob/main/CinqueKeymapZMK-01.pdf)
+
+Note that the firmware folders also include an [SVG template](https://github.com/swaziloo/cinque/blob/main/qmk/cinque/CinqueLayout01.svg) in case you want to lay out your own keymaps.
 
 ### [Build Guide](build.md)
 
